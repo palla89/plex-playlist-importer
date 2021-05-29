@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Plex Playlist Importer
 //
-//  Created by Alberto on 28/05/21.
+//  created by Alberto Paladino on 28/05/21.
 //
 
 import UIKit

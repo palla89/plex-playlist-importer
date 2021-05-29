@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		D350E5E026618BE2005764B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350E5DE26618BE2005764B7 /* Main.storyboard */; };
 		D350E5E226618BE5005764B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D350E5E126618BE5005764B7 /* Assets.xcassets */; };
 		D350E5E526618BE5005764B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350E5E326618BE5005764B7 /* LaunchScreen.storyboard */; };
+		D350E5EE2661926D005764B7 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5ED2661926D005764B7 /* UITextField.swift */; };
+		D350E5F02662529B005764B7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5EF2662529B005764B7 /* APIService.swift */; };
+		D350E5F2266258CE005764B7 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F1266258CE005764B7 /* URLRequest.swift */; };
+		D350E5F6266267C2005764B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F3266267C1005764B7 /* Environment.swift */; };
+		D350E5F7266267C2005764B7 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F4266267C2005764B7 /* SessionService.swift */; };
+		D350E5FF26629CBC005764B7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5FE26629CBC005764B7 /* UIViewController.swift */; };
+		D350E60226629D09005764B7 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = D350E60126629D09005764B7 /* SwiftMessages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		D350E5E126618BE5005764B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D350E5E426618BE5005764B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D350E5E626618BE5005764B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D350E5EC26618BEB005764B7 /* Plex Playlist Importer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Plex Playlist Importer.entitlements"; sourceTree = "<group>"; };
+		D350E5ED2661926D005764B7 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D350E5EF2662529B005764B7 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D350E5F1266258CE005764B7 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		D350E5F3266267C1005764B7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D350E5F4266267C2005764B7 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		D350E5FE26629CBC005764B7 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D350E60226629D09005764B7 /* SwiftMessages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +71,11 @@
 		D350E5D726618BE2005764B7 /* Plex Playlist Importer */ = {
 			isa = PBXGroup;
 			children = (
+				D350E5EC26618BEB005764B7 /* Plex Playlist Importer.entitlements */,
 				D350E5D826618BE2005764B7 /* AppDelegate.swift */,
 				D350E5DA26618BE2005764B7 /* SceneDelegate.swift */,
+				D350E5F9266267D0005764B7 /* services */,
+				D350E5FA266267E4005764B7 /* Extensions */,
 				D350E5DC26618BE2005764B7 /* ViewController.swift */,
 				D350E5DE26618BE2005764B7 /* Main.storyboard */,
 				D350E5E126618BE5005764B7 /* Assets.xcassets */,
@@ -65,6 +83,26 @@
 				D350E5E626618BE5005764B7 /* Info.plist */,
 			);
 			path = "Plex Playlist Importer";
+			sourceTree = "<group>";
+		};
+		D350E5F9266267D0005764B7 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5EF2662529B005764B7 /* APIService.swift */,
+				D350E5F3266267C1005764B7 /* Environment.swift */,
+				D350E5F4266267C2005764B7 /* SessionService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		D350E5FA266267E4005764B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5F1266258CE005764B7 /* URLRequest.swift */,
+				D350E5ED2661926D005764B7 /* UITextField.swift */,
+				D350E5FE26629CBC005764B7 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = "Plex Playlist Importer";
+			packageProductDependencies = (
+				D350E60126629D09005764B7 /* SwiftMessages */,
+			);
 			productName = "Plex Playlist Importer";
 			productReference = D350E5D526618BE2005764B7 /* Plex Playlist Importer.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +151,9 @@
 				Base,
 			);
 			mainGroup = D350E5CC26618BE2005764B7;
+			packageReferences = (
+				D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+			);
 			productRefGroup = D350E5D626618BE2005764B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D350E5DD26618BE2005764B7 /* ViewController.swift in Sources */,
+				D350E5F02662529B005764B7 /* APIService.swift in Sources */,
+				D350E5EE2661926D005764B7 /* UITextField.swift in Sources */,
+				D350E5F6266267C2005764B7 /* Environment.swift in Sources */,
+				D350E5FF26629CBC005764B7 /* UIViewController.swift in Sources */,
+				D350E5F7266267C2005764B7 /* SessionService.swift in Sources */,
+				D350E5F2266258CE005764B7 /* URLRequest.swift in Sources */,
 				D350E5D926618BE2005764B7 /* AppDelegate.swift in Sources */,
 				D350E5DB26618BE2005764B7 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Plex Playlist Importer/Plex Playlist Importer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VSE7H4EF5;
 				INFOPLIST_FILE = "Plex Playlist Importer/Info.plist";
@@ -295,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "it.dualb.Plex-Playlist-Importer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Plex Playlist Importer/Plex Playlist Importer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VSE7H4EF5;
 				INFOPLIST_FILE = "Plex Playlist Importer/Info.plist";
@@ -314,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "it.dualb.Plex-Playlist-Importer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D350E60126629D09005764B7 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D350E5CD26618BE2005764B7 /* Project object */;
 }

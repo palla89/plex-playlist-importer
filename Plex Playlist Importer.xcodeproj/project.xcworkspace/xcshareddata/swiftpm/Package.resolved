@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftMessages",
+        "repositoryURL": "https://github.com/SwiftKickMobile/SwiftMessages.git",
+        "state": {
+          "branch": null,
+          "revision": "ba6c3e7284a531965feff058ba36784f30017843",
+          "version": "9.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

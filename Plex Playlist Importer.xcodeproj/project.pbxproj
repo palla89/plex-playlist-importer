@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D350E5D926618BE2005764B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5D826618BE2005764B7 /* AppDelegate.swift */; };
+		D350E5DB26618BE2005764B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5DA26618BE2005764B7 /* SceneDelegate.swift */; };
+		D350E5DD26618BE2005764B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5DC26618BE2005764B7 /* ViewController.swift */; };
+		D350E5E026618BE2005764B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350E5DE26618BE2005764B7 /* Main.storyboard */; };
+		D350E5E226618BE5005764B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D350E5E126618BE5005764B7 /* Assets.xcassets */; };
+		D350E5E526618BE5005764B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350E5E326618BE5005764B7 /* LaunchScreen.storyboard */; };
+		D350E5EE2661926D005764B7 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5ED2661926D005764B7 /* UITextField.swift */; };
+		D350E5F02662529B005764B7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5EF2662529B005764B7 /* APIService.swift */; };
+		D350E5F2266258CE005764B7 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F1266258CE005764B7 /* URLRequest.swift */; };
+		D350E5F6266267C2005764B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F3266267C1005764B7 /* Environment.swift */; };
+		D350E5F7266267C2005764B7 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5F4266267C2005764B7 /* SessionService.swift */; };
+		D350E5FF26629CBC005764B7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5FE26629CBC005764B7 /* UIViewController.swift */; };
+		D350E60226629D09005764B7 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = D350E60126629D09005764B7 /* SwiftMessages */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D350E5D526618BE2005764B7 /* Plex Playlist Importer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plex Playlist Importer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D350E5D826618BE2005764B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D350E5DA26618BE2005764B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D350E5DC26618BE2005764B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D350E5DF26618BE2005764B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D350E5E126618BE5005764B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D350E5E426618BE5005764B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D350E5E626618BE5005764B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D350E5EC26618BEB005764B7 /* Plex Playlist Importer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Plex Playlist Importer.entitlements"; sourceTree = "<group>"; };
+		D350E5ED2661926D005764B7 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D350E5EF2662529B005764B7 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D350E5F1266258CE005764B7 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		D350E5F3266267C1005764B7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D350E5F4266267C2005764B7 /* SessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		D350E5FE26629CBC005764B7 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D350E5D226618BE2005764B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350E60226629D09005764B7 /* SwiftMessages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D350E5CC26618BE2005764B7 = {
+			isa = PBXGroup;
+			children = (
+				D350E5D726618BE2005764B7 /* Plex Playlist Importer */,
+				D350E5D626618BE2005764B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D350E5D626618BE2005764B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5D526618BE2005764B7 /* Plex Playlist Importer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D350E5D726618BE2005764B7 /* Plex Playlist Importer */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5EC26618BEB005764B7 /* Plex Playlist Importer.entitlements */,
+				D350E5D826618BE2005764B7 /* AppDelegate.swift */,
+				D350E5DA26618BE2005764B7 /* SceneDelegate.swift */,
+				D350E5F9266267D0005764B7 /* services */,
+				D350E5FA266267E4005764B7 /* Extensions */,
+				D350E5DC26618BE2005764B7 /* ViewController.swift */,
+				D350E5DE26618BE2005764B7 /* Main.storyboard */,
+				D350E5E126618BE5005764B7 /* Assets.xcassets */,
+				D350E5E326618BE5005764B7 /* LaunchScreen.storyboard */,
+				D350E5E626618BE5005764B7 /* Info.plist */,
+			);
+			path = "Plex Playlist Importer";
+			sourceTree = "<group>";
+		};
+		D350E5F9266267D0005764B7 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5EF2662529B005764B7 /* APIService.swift */,
+				D350E5F3266267C1005764B7 /* Environment.swift */,
+				D350E5F4266267C2005764B7 /* SessionService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		D350E5FA266267E4005764B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D350E5F1266258CE005764B7 /* URLRequest.swift */,
+				D350E5ED2661926D005764B7 /* UITextField.swift */,
+				D350E5FE26629CBC005764B7 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D350E5D426618BE2005764B7 /* Plex Playlist Importer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D350E5E926618BE5005764B7 /* Build configuration list for PBXNativeTarget "Plex Playlist Importer" */;
+			buildPhases = (
+				D350E5D126618BE2005764B7 /* Sources */,
+				D350E5D226618BE2005764B7 /* Frameworks */,
+				D350E5D326618BE2005764B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plex Playlist Importer";
+			packageProductDependencies = (
+				D350E60126629D09005764B7 /* SwiftMessages */,
+			);
+			productName = "Plex Playlist Importer";
+			productReference = D350E5D526618BE2005764B7 /* Plex Playlist Importer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D350E5CD26618BE2005764B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D350E5D426618BE2005764B7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = D350E5D026618BE2005764B7 /* Build configuration list for PBXProject "Plex Playlist Importer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D350E5CC26618BE2005764B7;
+			packageReferences = (
+				D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+			);
+			productRefGroup = D350E5D626618BE2005764B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D350E5D426618BE2005764B7 /* Plex Playlist Importer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D350E5D326618BE2005764B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350E5E526618BE5005764B7 /* LaunchScreen.storyboard in Resources */,
+				D350E5E226618BE5005764B7 /* Assets.xcassets in Resources */,
+				D350E5E026618BE2005764B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D350E5D126618BE2005764B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350E5DD26618BE2005764B7 /* ViewController.swift in Sources */,
+				D350E5F02662529B005764B7 /* APIService.swift in Sources */,
+				D350E5EE2661926D005764B7 /* UITextField.swift in Sources */,
+				D350E5F6266267C2005764B7 /* Environment.swift in Sources */,
+				D350E5FF26629CBC005764B7 /* UIViewController.swift in Sources */,
+				D350E5F7266267C2005764B7 /* SessionService.swift in Sources */,
+				D350E5F2266258CE005764B7 /* URLRequest.swift in Sources */,
+				D350E5D926618BE2005764B7 /* AppDelegate.swift in Sources */,
+				D350E5DB26618BE2005764B7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D350E5DE26618BE2005764B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D350E5DF26618BE2005764B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D350E5E326618BE5005764B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D350E5E426618BE5005764B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D350E5E726618BE5005764B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D350E5E826618BE5005764B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D350E5EA26618BE5005764B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Plex Playlist Importer/Plex Playlist Importer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VSE7H4EF5;
+				INFOPLIST_FILE = "Plex Playlist Importer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.dualb.Plex-Playlist-Importer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D350E5EB26618BE5005764B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Plex Playlist Importer/Plex Playlist Importer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VSE7H4EF5;
+				INFOPLIST_FILE = "Plex Playlist Importer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.dualb.Plex-Playlist-Importer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D350E5D026618BE2005764B7 /* Build configuration list for PBXProject "Plex Playlist Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D350E5E726618BE5005764B7 /* Debug */,
+				D350E5E826618BE5005764B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D350E5E926618BE5005764B7 /* Build configuration list for PBXNativeTarget "Plex Playlist Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D350E5EA26618BE5005764B7 /* Debug */,
+				D350E5EB26618BE5005764B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D350E60126629D09005764B7 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D350E60026629D09005764B7 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D350E5CD26618BE2005764B7 /* Project object */;
+}

@@ -7,7 +7,7 @@ Currently PMS does not have an GUI for importing playlists. However, there are e
 
 # Installation
 You should build the app yourself, but it should be very easy and quick if you're comfortable with XCode.
-If someone ever needs an already compiled app for Mac, I'll find how to create it and post it here.
+In releases you can find a notarized version of the app, ready for use!
 
 # Usage
 This tool is quite simple in execution.  The most important thing is getting the correct information to fill into the form.

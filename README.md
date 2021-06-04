@@ -1,3 +1,4 @@
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?business=PZ48AHDQCSXBC&item_name=Offer+me+a+coffee&currency_code=EUR)
 # Plex Playlist Importer
 A simple Mac/iOS/iPad app to create playlists from m3u directly to Plex Server Server.
 I got inspiration for the UI and for the README from the Universal Windows Platform github project for Windows users that you can find here: https://github.com/gregchak/plex-playlist-import
@@ -50,3 +51,9 @@ First release.
 
 # License
 GNU General Public License v3.0
+
+# Support me
+I know it's a tiny tiny project but if it helped you in some way, you can give me a cup of coffee :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=PZ48AHDQCSXBC&item_name=Offer+me+a+coffee&currency_code=EUR)
+

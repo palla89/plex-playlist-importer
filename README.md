@@ -55,5 +55,4 @@ GNU General Public License v3.0
 # Support me
 I know it's a tiny tiny project but if it helped you in some way, you can give me a cup of coffee :)
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=PZ48AHDQCSXBC&item_name=Offer+me+a+coffee&currency_code=EUR)
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8F328EJV1)
